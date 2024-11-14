@@ -8,7 +8,7 @@ interface EpisodesCharactersProps{
 
 let EpisodesCharacters: FC<EpisodesCharactersProps>=({characters})=>{
 let [arr,setArr]=useState<any>();
-let results;
+
   useEffect(()=>{
     const fetchURLs = async (urls:any) => {
     try {
@@ -25,7 +25,6 @@ let results;
   
   fetchURLs(characters)
     .then(data => {
-      results=data
       setArr(data)
   })
     .catch(error => {

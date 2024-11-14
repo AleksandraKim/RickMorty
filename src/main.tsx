@@ -24,7 +24,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider  future={{v7_startTransition: true}}
-  router={router}/>
+    <RouterProvider future={{v7_startTransition: true}} router={router}/>
   </StrictMode>,
 )
