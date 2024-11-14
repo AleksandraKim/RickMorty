@@ -1,0 +1,187 @@
+.main{
+    width: 100%;
+    position: relative;
+}
+.main__background{
+    top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.main__background-imageLogo{
+    position: absolute;
+    margin-top: 30px;
+    width: 410px;
+    height: 125px;
+    z-index: 1;
+}
+.main__background-imageFirst{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+}
+.main__background-imageSecond{
+    top:370px;
+    position: absolute;
+    width: 900px;
+    height: 700px;
+}
+.main__list{
+    position: absolute;
+    top:50px;
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 220px;
+}
+.main__menu-link{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 1);
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    &:hover,&:focus,&:active{
+        color: rgba(66, 180, 202, 1);
+    }
+}
+Link{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 1);
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    &:hover,&:focus,&:active{
+        color: rgba(66, 180, 202, 1);
+    }
+}
+.main__inner{
+    width: 785px;
+    height: 805px;
+    position: absolute;
+    top:230px;
+    left: 50%;
+    right: 50%;
+    transform:translate(-50%);
+    display:grid;
+    grid-template-rows: 44px 735px;
+    grid-row-gap: 32px;
+}
+.main__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45px;
+}
+.main__form-button{
+    box-sizing: border-box;
+    padding-left: 20px;
+    text-align: left;
+    border: 2px solid rgba(61, 164, 184, 1);
+    width: 195px;
+    font-size:12px;
+    line-height: 14px;
+    height: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+    background: url("src/images/main/sort.png")rgba(191, 222, 66, 1);
+    background-repeat: no-repeat;
+    background-position: 160px 10px;
+   
+}
+.main__last{
+    margin-left: 12px;
+}
+.main__last-option{
+    position: relative;
+    border-radius: 90px;
+    margin-top:42px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main__last-button{
+    box-sizing: border-box;
+    text-align: left;
+    width: 44px;
+    border-radius: 10px;
+    border: 2px solid rgba(61, 164, 184, 1);
+    background: url("src/images/main/mainSort.png")rgba(191, 222, 66, 1);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    height: 100%;   
+}
+.main__link{
+    box-sizing: border-box;
+    text-align: left;
+    border: 2px solid rgba(61, 164, 184, 1);
+    font-size:15px;
+    line-height: 14px;
+    height: 100%;
+    width: 195px;
+    background-color:rgba(191, 222, 66, 1);
+    padding:10px;
+    font-family: Arial;
+    color:rgba(61, 164, 184, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    &:hover,&:active{
+        color: rgba(66, 180, 202, 1);
+
+    }
+}
+.main__form-span{
+    color: rgba(159, 178, 79, 1);
+    font-size:12px;
+    line-height: 14px;
+}
+.main__form-input{
+    box-sizing: border-box;
+    border: 2px solid rgba(61, 164, 184, 1);
+    padding-left: 15px;
+    height: 100%;
+    border-radius: 10px;
+    width: 230px;
+    background: url('src/images/main/poisk.png')rgba(191, 222, 66, 1);
+    background-position: 195px 10px;
+    background-repeat: no-repeat;
+    &::placeholder{
+        color: rgba(159, 178, 79, 1);
+    }
+    &:active{
+        border: 2px solid rgba(61, 164, 184, 1);
+    }
+}
+.main__items{
+   width:100%;
+   display:grid;
+   grid-template-columns: 240px 240px 240px;
+   grid-template-rows: 350px 350px;
+   grid-column-gap: 32px;
+   grid-row-gap: 27px;
+   overflow-y: scroll;
+   &::-webkit-scrollbar {
+    display: none;
+}
+}
+.main__form{
+    display: flex;
+}
+.main__form-select{
+    margin-left: 12px;
+}
+.main__form-option{
+    position: relative;
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+

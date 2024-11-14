@@ -1,0 +1,11 @@
+@use './components/reset/reset.scss';
+@use './components/header/header.scss';
+@use './components/episodes/episodes.scss';
+@use './components/characters/characters.scss';
+@use './components/main/main.scss';
+@use './components/fonts/fonts.scss';
+
+.page{
+    width:100%;
+    height: 100vh;
+}
